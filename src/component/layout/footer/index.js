@@ -71,12 +71,12 @@ const Footer = () => {
             </div>
             <div className="col-md-3">
               <div className="pb-3">
-                <h4>Twitter Feed</h4>
+                <h4>Page Links</h4>
               </div>
               <div style={{ fontSize: "13px" }}>
                 <ul className="list-unstyled">
                   <li   ><Link  to="/" className="text-decoration-none text-white p-2 ">Home</Link></li>
-                  <li className="pt-4"><Link to="/products"  className="text-decoration-none text-white p-2 ">Products</Link></li>
+                  <li className="pt-4"><Link to="/product"  className="text-decoration-none text-white p-2 ">Products</Link></li>
                   <li className="pt-4"><Link to="/services"  className="text-decoration-none text-white p-2 ">Services</Link></li>
                   <li className="pt-4"><Link  to="/portfolio" className="text-decoration-none text-white p-2 ">Portfolio</Link></li>
                   <li className="pt-4"><Link  to="/about" className="text-decoration-none text-white p-2 ">About</Link></li>

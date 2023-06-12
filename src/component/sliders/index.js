@@ -12,6 +12,8 @@ import "slick-carousel/slick/slick-theme.css";
 import "./slider.css";
 import { FcLike } from "react-icons/fc";
 import Newstore from "../newstore";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const Sliders = () => {
@@ -21,6 +23,19 @@ const Sliders = () => {
 
   const send = (e) => {
     dispatch(ADD(e));
+    toast.success('successfully', {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      // style: { background: '#00CC00' },
+      color:"white"
+    
+      });
   };
   var settings = {
     dots: false,
@@ -121,6 +136,7 @@ const Sliders = () => {
                 );
               })}
             </Slider>
+            <ToastContainer />
            
           </div>
           <div className="text-center mb-5">
